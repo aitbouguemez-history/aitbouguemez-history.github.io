@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aitbouguemez-history.github.io/sitemap.xml
