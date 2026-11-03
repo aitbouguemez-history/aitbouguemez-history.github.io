@@ -95,6 +95,12 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:7px;line-height:1.6}
 .legend{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:26px 0 8px;font-size:.9rem;color:var(--ink2);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;box-shadow:var(--shadow)}
 .note{border:1px solid var(--line);background:var(--gold-bg);border-radius:14px;padding:16px 20px;margin:18px 0;font-size:.96rem}
 .note strong{color:var(--clay2)}
+.tourism-notice{border:2px solid var(--gold);background:var(--gold-bg);border-radius:14px;padding:18px 22px;margin:0 0 22px;font-size:1.03rem;font-weight:700;line-height:1.85;text-align:center;color:var(--ink);box-shadow:var(--shadow)}
+.book-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:14px}
+.book-btn{appearance:none;border:1px solid var(--clay);background:var(--clay);color:var(--on-accent);font-weight:700;font-size:.98rem;padding:9px 26px;border-radius:999px;cursor:pointer;line-height:1.5;transition:background .18s ease,border-color .18s ease}
+.book-btn:hover{background:var(--clay2);border-color:var(--clay2)}
+.book-msg{font-weight:700;color:var(--clay2);background:var(--olive-bg);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:.95rem;line-height:1.6}
+.book-msg[hidden]{display:none!important}
 ul.tight{margin:0 0 14px;padding-inline-start:22px}
 ul.tight li{margin-bottom:7px}
 .term{font-weight:700;color:var(--clay2)}
@@ -255,7 +261,6 @@ html[lang="fr"] .langbar .brand,html[lang="en"] .langbar .brand{font-family:"Cor
     <h1>Histoire des Aït Bouguemez</h1>
     <p class="sub">« La vallée heureuse » — des traces de dinosaures aux vergers de pommiers</p>
     <p class="lead">L'histoire de cette vallée n'est pas celle d'un État ni d'une ville, mais celle d'une société montagnarde à la fois paysanne et pastorale, qui a gardé pendant des siècles son indépendance de fait, organisé son eau et ses pâturages par des coutumes précises, et protégé ses récoltes dans des greniers collectifs — avant que la route goudronnée, la pomme et le tourisme ne transforment son visage en vingt ans.</p>
-    <p class="byline"><span>Site préparé par</span><strong>Badr Allali</strong></p>
     <div class="facts">
       <div class="fact"><b>1800 – 2000 m</b><span>Altitude du fond de vallée, sur environ 25 km</span></div>
       <div class="fact"><b>4068 m</b><span>Le sommet de l'Ighil M'Goun, au sud de la vallée</span></div>
@@ -269,7 +274,7 @@ html[lang="fr"] .langbar .brand,html[lang="en"] .langbar .brand{font-family:"Cor
 <nav class="chapters" aria-label="Chapitres de la page" inert>
   <div class="drawer-head"><span class="drawer-title">Chapitres de la page</span><button type="button" class="drawer-close" aria-label="Fermer le menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
   <div class="wrap chapNav">
-    <a href="#fr-geo">Géographie</a><a href="#fr-prehistoire">Préhistoire</a><a href="#fr-nom">Nom &amp; tribus</a><a href="#fr-economie">Transhumance &amp; eau</a><a href="#fr-dynasties">Dynasties &amp; zaouïas</a><a href="#fr-siba">Pays de la siba</a><a href="#fr-protectorat">Protectorat &amp; résistance</a><a href="#fr-moderne">Après l'indépendance</a><a href="#fr-societe">Société &amp; architecture</a><a href="#fr-patrimoine">Patrimoine</a><a href="#fr-chronologie">Chronologie</a><a href="#fr-verite">Documenté &amp; récit oral</a><a href="#fr-faq">Questions fréquentes</a><a href="#fr-galerie">Galerie photos</a><a href="#fr-sources">Sources</a><a href="#fr-contact">Contact</a>
+    <a href="#fr-geo">Géographie</a><a href="#fr-prehistoire">Préhistoire</a><a href="#fr-nom">Nom &amp; tribus</a><a href="#fr-economie">Transhumance &amp; eau</a><a href="#fr-dynasties">Dynasties &amp; zaouïas</a><a href="#fr-siba">Pays de la siba</a><a href="#fr-protectorat">Protectorat &amp; résistance</a><a href="#fr-moderne">Après l'indépendance</a><a href="#fr-societe">Société &amp; architecture</a><a href="#fr-patrimoine">Patrimoine</a><a href="#fr-chronologie">Chronologie</a><a href="#fr-verite">Documenté &amp; récit oral</a><a href="#fr-faq">Questions fréquentes</a><a href="#fr-galerie">Galerie photos</a><a href="#fr-tourisme">Tourisme et exploration</a><a href="#fr-sources">Sources</a><a href="#fr-contact">Contact</a>
   </div>
 </nav>
 
@@ -473,6 +478,15 @@ html[lang="fr"] .langbar .brand,html[lang="en"] .langbar .brand{font-family:"Cor
     </div>
   </section>
 
+  <section id="fr-tourisme">
+    <div class="sec-head"><span class="num">Tourisme et exploration</span><h2>Tourisme et exploration</h2><p>La vallée heureuse est une destination de marche et d'exploration, des promenades tranquilles entre les villages à l'ascension du mont M'Goun. Voici des itinéraires et des activités connus dans la vallée et ses environs.</p></div>
+    <div class="tourism-notice" role="note">Note : la section Tourisme est encore en cours de développement, elle n'est pas encore officiellement disponible, et sera disponible prochainement.</div>
+    <div class="card"><h3>Tour de la vallée en 5 jours</h3><p>Départ de Marrakech, en passant par les cascades d'Ouzoud et Azilal jusqu'à la vallée. Dans la vallée: visite du grenier de Sidi Moussa, marche entre les champs et les canaux d'irrigation, traces de pas de dinosaures à Ibakliouen, et entrée dans les gorges d'Arous. Retour à Marrakech par un autre itinéraire, via Demnate et le pont naturel d'Imi N'Ifri. Niveau facile à moyen.</p><div class="book-row"><button type="button" class="book-btn" data-book>Réserver</button><span class="book-msg" role="status">Disponible prochainement, merci de votre compréhension</span></div></div>
+    <div class="card"><h3>Ascension du mont M'Goun en 4 jours</h3><p>De la vallée aux pâturages d'Azib N'Ikkis, puis au plateau de Tarkeddit, puis au sommet du M'Goun (4068 m) lors d'une longue journée, et descente par le col de Tizi N'Aït Imi (2905 m) et retour à Marrakech. Niveau difficile, et la période favorable est généralement de mai à octobre.</p><div class="book-row"><button type="button" class="book-btn" data-book>Réserver</button><span class="book-msg" role="status">Disponible prochainement, merci de votre compréhension</span></div></div>
+    <div class="card"><h3>Activités courtes dans la vallée</h3><p>Marche d'un ou deux jours entre les villages, visite du grenier de Sidi Moussa, traces de dinosaures à Ibakliouen, vélo tout terrain dans la vallée, et participation aux activités agricoles avec les habitants.</p><div class="book-row"><button type="button" class="book-btn" data-book>Réserver</button><span class="book-msg" role="status">Disponible prochainement, merci de votre compréhension</span></div></div>
+    <p class="note">Ces itinéraires et activités sont connus et organisés par des guides locaux et des organisateurs, et ne sont pas des offres à prix fixes du propriétaire du site.</p>
+  </section>
+
   <section id="fr-sources">
     <div class="sec-head"><span class="num">Sources</span><h2>Sources de cette page</h2><p>Cette page est construite à partir d'un rapport de recherche documenté dont les sources ont été lues via l'index web le 30 octobre 2026, sans vérification de terrain. Aucun document primaire local (manuscrit, acte coutumier ou registre de zaouïa) propre aux Aït Bouguemez n'y figurait, car les sources disponibles sur le web ne les publient pas. La liste complète des références — Khouya (Atlas Scoop, 2017), Wikipédia « Vallée des Aït Bouguemez », Romagny et al. (2008), le dossier du ministère de la Culture sur les greniers collectifs, Gellner, Médias24, Hespress, CityPopulation/HCP et l'UNESCO — est détaillée dans la version arabe, section « المصادر ».</p></div>
     <div class="card"><h3>Références principales</h3><ol class="sources"><li>Mohamed Khouya, « Le Haut Atlas central : des systèmes hérités au système instauré », Atlas Scoop, 2017 : <a href="https://www.atlasscoop.com/34626/" target="_blank" rel="noopener">atlasscoop.com/34626</a></li><li>« Vallée des Aït Bouguemez », Wikipédia en français : <a href="https://fr.wikipedia.org/wiki/Vall%C3%A9e_des_A%C3%AFt_Bouguemez" target="_blank" rel="noopener">fr.wikipedia.org/wiki/Vallée_des_Aït_Bouguemez</a></li><li>Ministère de la Culture, « Projet d'inscription des greniers collectifs au patrimoine mondial de l'UNESCO » (PDF) : <a href="https://mjcc.gov.ma/wp-content/uploads/2022/02/Projet-dinscription-des-greniers-collectifs-au-patrimoine-mondial-de-lUNESCO-vf-2-1.pdf" target="_blank" rel="noopener">mjcc.gov.ma — dossier des greniers collectifs</a></li><li>CityPopulation d'après le Haut-Commissariat au Plan — commune de Tabant : <a href="https://www.citypopulation.de/en/morocco/benimellalkhenifra/admin/azilal/0810309__tabant/" target="_blank" rel="noopener">citypopulation.de — Tabant</a></li><li>UNESCO, Géoparcs mondiaux : <a href="https://www.unesco.org/en/articles/new-unesco-global-geoparks-network-support-africas-rich-geological-heritage" target="_blank" rel="noopener">unesco.org</a></li></ol><p class="src">Photos de la page : vues de la vallée, de ses champs et de ses villages, issues de sources touristiques et de pages de présentation de la vallée (Partir, Morocco Like a Local, Zuiderhuis, Austria-Forum pour la photo de l'intérieur du grenier collectif).</p></div>
@@ -553,6 +567,17 @@ html[lang="fr"] .langbar .brand,html[lang="en"] .langbar .brand{font-family:"Cor
   });
 })();
 
+// ===== Tourism booking buttons: show "available soon" message in place, no navigation, no form =====
+(function(){
+  document.querySelectorAll('[data-book]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var row=btn.closest('.book-row');
+      if(!row) return;
+      var msg=row.querySelector('.book-msg');
+      if(msg) msg.hidden=false;
+    });
+  });
+})();
 // ===== Side drawer: opens only from the menu button; closes on close button, backdrop, Escape, link or language switch =====
 (function(){
   var btn=document.getElementById('menuBtn');
