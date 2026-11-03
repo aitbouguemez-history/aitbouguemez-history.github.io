@@ -95,6 +95,12 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:7px;line-height:1.6}
 .legend{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:26px 0 8px;font-size:.9rem;color:var(--ink2);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;box-shadow:var(--shadow)}
 .note{border:1px solid var(--line);background:var(--gold-bg);border-radius:14px;padding:16px 20px;margin:18px 0;font-size:.96rem}
 .note strong{color:var(--clay2)}
+.tourism-notice{border:2px solid var(--gold);background:var(--gold-bg);border-radius:14px;padding:18px 22px;margin:0 0 22px;font-size:1.03rem;font-weight:700;line-height:1.85;text-align:center;color:var(--ink);box-shadow:var(--shadow)}
+.book-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:14px}
+.book-btn{appearance:none;border:1px solid var(--clay);background:var(--clay);color:var(--on-accent);font-weight:700;font-size:.98rem;padding:9px 26px;border-radius:999px;cursor:pointer;line-height:1.5;transition:background .18s ease,border-color .18s ease}
+.book-btn:hover{background:var(--clay2);border-color:var(--clay2)}
+.book-msg{font-weight:700;color:var(--clay2);background:var(--olive-bg);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:.95rem;line-height:1.6}
+.book-msg[hidden]{display:none!important}
 ul.tight{margin:0 0 14px;padding-inline-start:22px}
 ul.tight li{margin-bottom:7px}
 .term{font-weight:700;color:var(--clay2)}
@@ -255,7 +261,6 @@ html[lang="fr"] .langbar .brand,html[lang="en"] .langbar .brand{font-family:"Cor
     <h1>History of Aït Bouguemez</h1>
     <p class="sub">“The Happy Valley” — from dinosaur tracks to apple orchards</p>
     <p class="lead">This valley's history is not the history of a state or a city. It is the history of a mountain society that was both farming and herding at once, kept its de facto independence for centuries, organised its water and pastures through precise custom, and guarded its harvests in collective granaries — until the paved road, apples and tourism transformed its face in just two decades.</p>
-    <p class="byline"><span>Site prepared by</span><strong>Badr Allali</strong></p>
     <div class="facts">
       <div class="fact"><b>1,800 – 2,000 m</b><span>Altitude of the valley floor, stretching about 25 km</span></div>
       <div class="fact"><b>4,068 m</b><span>Ighil M'Goun peak, overlooking the valley from the south</span></div>
@@ -269,7 +274,7 @@ html[lang="fr"] .langbar .brand,html[lang="en"] .langbar .brand{font-family:"Cor
 <nav class="chapters" aria-label="Page chapters" inert>
   <div class="drawer-head"><span class="drawer-title">Page chapters</span><button type="button" class="drawer-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
   <div class="wrap chapNav">
-    <a href="#en-geo">Geography</a><a href="#en-prehistory">Prehistory</a><a href="#en-name">Name &amp; tribes</a><a href="#en-economy">Transhumance &amp; water</a><a href="#en-dynasties">Dynasties &amp; zawiyas</a><a href="#en-siba">Land of siba</a><a href="#en-protectorate">Protectorate &amp; resistance</a><a href="#en-modern">After independence</a><a href="#en-society">Society &amp; architecture</a><a href="#en-heritage">Heritage</a><a href="#en-timeline">Timeline</a><a href="#en-truth">Documented &amp; oral</a><a href="#en-faq">FAQ</a><a href="#en-gallery">Photo gallery</a><a href="#en-sources">Sources</a><a href="#en-contact">Contact</a>
+    <a href="#en-geo">Geography</a><a href="#en-prehistory">Prehistory</a><a href="#en-name">Name &amp; tribes</a><a href="#en-economy">Transhumance &amp; water</a><a href="#en-dynasties">Dynasties &amp; zawiyas</a><a href="#en-siba">Land of siba</a><a href="#en-protectorate">Protectorate &amp; resistance</a><a href="#en-modern">After independence</a><a href="#en-society">Society &amp; architecture</a><a href="#en-heritage">Heritage</a><a href="#en-timeline">Timeline</a><a href="#en-truth">Documented &amp; oral</a><a href="#en-faq">FAQ</a><a href="#en-gallery">Photo gallery</a><a href="#en-tourism">Tourism and exploration</a><a href="#en-sources">Sources</a><a href="#en-contact">Contact</a>
   </div>
 </nav>
 
@@ -473,6 +478,15 @@ html[lang="fr"] .langbar .brand,html[lang="en"] .langbar .brand{font-family:"Cor
     </div>
   </section>
 
+  <section id="en-tourism">
+    <div class="sec-head"><span class="num">Tourism and exploration</span><h2>Tourism and exploration</h2><p>The Happy Valley is a destination for walking and exploration, from gentle walks between villages to the ascent of Mount M'Goun. Here are well-known routes and activities in the valley and its surroundings.</p></div>
+    <div class="tourism-notice" role="note">Note: the Tourism section is still under development, it is not yet officially available, and will be available soon.</div>
+    <div class="card"><h3>Valley tour in 5 days</h3><p>Departure from Marrakech, passing Ouzoud Waterfalls and Azilal to the valley. In the valley: visit to the Sidi Moussa granary, walking among fields and irrigation channels, dinosaur footprints at Ibakliouen, and entry into the Arous Gorges. Return to Marrakech by another route, via Demnate and the Imi N'Ifri natural bridge. Easy to moderate level.</p><div class="book-row"><button type="button" class="book-btn" data-book>Book</button><span class="book-msg" role="status">Available soon, thank you for your understanding</span></div></div>
+    <div class="card"><h3>Mount M'Goun ascent in 4 days</h3><p>From the valley to the Azib N'Ikkis pastures, then to the Tarkeddit Plateau, then to the M'Goun summit (4068 m) on a long day, and descent via the Tizi N'Aït Imi Pass (2905 m) and return to Marrakech. Difficult level, and the suitable period is generally from May to October.</p><div class="book-row"><button type="button" class="book-btn" data-book>Book</button><span class="book-msg" role="status">Available soon, thank you for your understanding</span></div></div>
+    <div class="card"><h3>Short activities in the valley</h3><p>One- or two-day walks between villages, visit to the Sidi Moussa granary, dinosaur footprints at Ibakliouen, mountain biking in the valley, and taking part in farming activities with local residents.</p><div class="book-row"><button type="button" class="book-btn" data-book>Book</button><span class="book-msg" role="status">Available soon, thank you for your understanding</span></div></div>
+    <p class="note">These routes and activities are well known and organised by local guides and operators, and are not fixed-price offers from the owner of this site.</p>
+  </section>
+
   <section id="en-sources">
     <div class="sec-head"><span class="num">Sources</span><h2>Sources for this page</h2><p>This page was built from a documented research report whose sources were read via the web index on 30 October 2026, with no field verification. It contained no local primary document (manuscript, customary deed or zawiya register) specific to Aït Bouguemez, because the sources available on the web do not publish them. The full reference list — Khouya (Atlas Scoop, 2017), Wikipedia “Vallée des Aït Bouguemez”, Romagny et al. (2008), the Ministry of Culture file on collective granaries, Gellner, Médias24, Hespress, CityPopulation/HCP and UNESCO — is detailed in the Arabic version, Sources section.</p></div>
     <div class="card"><h3>Main references</h3><ol class="sources"><li>Mohamed Khouya, “The Central High Atlas: From Inherited Systems to the Imposed System”, Atlas Scoop, 2017: <a href="https://www.atlasscoop.com/34626/" target="_blank" rel="noopener">atlasscoop.com/34626</a></li><li>“Vallée des Aït Bouguemez”, French Wikipedia: <a href="https://fr.wikipedia.org/wiki/Vall%C3%A9e_des_A%C3%AFt_Bouguemez" target="_blank" rel="noopener">fr.wikipedia.org/wiki/Vallée_des_Aït_Bouguemez</a></li><li>Ministry of Culture, “Projet d'inscription des greniers collectifs au patrimoine mondial de l'UNESCO” (PDF): <a href="https://mjcc.gov.ma/wp-content/uploads/2022/02/Projet-dinscription-des-greniers-collectifs-au-patrimoine-mondial-de-lUNESCO-vf-2-1.pdf" target="_blank" rel="noopener">mjcc.gov.ma — collective granaries file</a></li><li>CityPopulation from the High Commission for Planning — Tabant commune: <a href="https://www.citypopulation.de/en/morocco/benimellalkhenifra/admin/azilal/0810309__tabant/" target="_blank" rel="noopener">citypopulation.de — Tabant</a></li><li>UNESCO, Global Geoparks: <a href="https://www.unesco.org/en/articles/new-unesco-global-geoparks-network-support-africas-rich-geological-heritage" target="_blank" rel="noopener">unesco.org</a></li></ol><p class="src">Page photos: views of the valley, its fields and villages from tourist sources and valley presentation pages (Partir, Morocco Like a Local, Zuiderhuis, Austria-Forum for the photo inside the collective granary).</p></div>
@@ -553,6 +567,17 @@ html[lang="fr"] .langbar .brand,html[lang="en"] .langbar .brand{font-family:"Cor
   });
 })();
 
+// ===== Tourism booking buttons: show "available soon" message in place, no navigation, no form =====
+(function(){
+  document.querySelectorAll('[data-book]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var row=btn.closest('.book-row');
+      if(!row) return;
+      var msg=row.querySelector('.book-msg');
+      if(msg) msg.hidden=false;
+    });
+  });
+})();
 // ===== Side drawer: opens only from the menu button; closes on close button, backdrop, Escape, link or language switch =====
 (function(){
   var btn=document.getElementById('menuBtn');
