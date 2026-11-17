@@ -317,6 +317,9 @@ footer{margin-top:96px;border-top:1px solid var(--line);background:var(--bg2);pa
 #readProgress{position:fixed;top:0;inset-inline-start:0;width:100%;height:3px;background:var(--clay);transform:scaleX(0);transform-origin:right;z-index:400;pointer-events:none}
 html[dir="ltr"] #readProgress{transform-origin:left}
 footer .updated{font-size:.85rem;color:var(--muted);margin:14px 0 0}
+footer .footer-links{margin:18px 0 0;padding-top:18px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
+footer .footer-links a{font-weight:700;text-decoration:none;color:var(--terra)}
+footer .footer-links a:hover{text-decoration:underline;text-underline-offset:3px}
 
 /* ===== TOP BAR ===== */
 .langbar{position:sticky;top:0;z-index:200;background:var(--bar);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--ink);border-bottom:1px solid var(--line)}
@@ -1043,7 +1046,8 @@ html[lang="fr"] .langbar .brand,html[lang="en"] .langbar .brand{font-family:"Cor
     <p class="preparer">مُعدّ الموقع: <strong>بدر علالي</strong></p>
     <p><strong>تاريخ أيت بوكماز</strong> — صفحة توثيقية جامعة عن وادي آيت بوڭماز (آيت بوغماز / Aït Bouguemez) في الأطلس الكبير المركزي، من عصور ما قبل التاريخ إلى أكتوبر 2026، مع تمييز صريح بين الموثّق والفرضية والرواية الشفوية في كل موضع.</p>
     <p>أُعدّ المحتوى من مصادر منشورة قُرئت في 30 أكتوبر 2026؛ والأرقام والوقائع منسوبة إلى مصادرها في متن الصفحة وقسم المصادر.</p>
-    <p class="updated">آخر تحديث: <time datetime="2026-11-05">5 نوفمبر 2026</time></p>
+    <nav class="footer-links" aria-label="روابط إضافية"><a href="https://aitbouguemez-history.github.io/privacy/" target="_blank" rel="noopener">سياسة الخصوصية</a></nav>
+    <p class="updated">آخر تحديث: <time datetime="2026-11-17">17 نوفمبر 2026</time></p>
   </div>
 </footer>
 </div><!-- /view-ar -->
