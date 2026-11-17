@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RK9KJZ2YC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RK9KJZ2YC3');
+</script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="سياسة الخصوصية لموقع تاريخ أيت بوكماز — كيف نتعامل مع بيانات الزوار وملفات تعريف الارتباط وخدمات Google." />
+    <link rel="icon" type="image/png" sizes="480x480" href="/favicon.png">
+    <title>سياسة الخصوصية — تاريخ أيت بوكماز</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #faf6ee;
+        --surface: #fffdf7;
+        --ink: #3e362c;
+        --muted: #7d6f5a;
+        --clay: #2e4d3a;
+        --clay-soft: #e6edda;
+        --terra: #9a5a33;
+        --gold: #b3924f;
+        --line: #e6ddc9;
+        --shadow: 0 1px 3px rgba(62,54,44,.05), 0 16px 36px -22px rgba(62,54,44,.22);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #171410;
+          --surface: #231f18;
+          --ink: #f0e9da;
+          --muted: #a79a85;
+          --clay: #9dbfa5;
+          --clay-soft: #2a3324;
+          --terra: #d29a6b;
+          --gold: #cdb277;
+          --line: #3a342a;
+          --shadow: 0 1px 3px rgba(0,0,0,.3), 0 16px 36px -22px rgba(0,0,0,.6);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "IBM Plex Sans Arabic", system-ui, sans-serif;
+        line-height: 1.9;
+        font-size: 1.02rem;
+      }
+      button { min-height: 2.25rem; }
+      a { color: var(--clay); text-underline-offset: 3px; }
+      a:hover { color: var(--terra); }
+
+      .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 64px; }
+
+      header.page-head { padding: 44px 0 8px; text-align: center; }
+      .head-rule { display: flex; align-items: center; gap: 14px; justify-content: center; margin-bottom: 18px; }
+      .head-rule::before, .head-rule::after {
+        content: ""; height: 1px; width: 64px; background: var(--gold); opacity: .7;
+      }
+      .head-rule span { color: var(--terra); font-size: 1.05rem; letter-spacing: .35em; text-indent: .35em; }
+      h1 {
+        font-family: "Amiri", serif;
+        font-size: clamp(2rem, 6vw, 2.9rem);
+        margin: 0 0 6px;
+        color: var(--clay);
+        line-height: 1.4;
+      }
+      .site-name { font-family: "Amiri", serif; font-size: 1.15rem; color: var(--terra); margin: 0 0 10px; }
+      .updated { color: var(--muted); font-size: .92rem; margin: 0; }
+
+      .lang-switch {
+        display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+        margin: 26px 0 30px;
+      }
+      .lang-switch button {
+        font-family: inherit; font-size: .95rem; font-weight: 600;
+        padding: 6px 20px; border-radius: 999px; cursor: pointer;
+        border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+        transition: background .15s, color .15s, border-color .15s;
+      }
+      .lang-switch button[aria-pressed="true"] {
+        background: var(--clay); border-color: var(--clay); color: #fdfaf2;
+      }
+      @media (prefers-color-scheme: dark) {
+        .lang-switch button[aria-pressed="true"] { color: #1c2b20; }
+      }
+
+      article {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+        padding: clamp(22px, 5vw, 44px);
+      }
+      section + section { margin-top: 34px; }
+      h2 {
+        font-family: "Amiri", serif;
+        font-size: 1.45rem; color: var(--clay);
+        margin: 0 0 10px; line-height: 1.5;
+        display: flex; align-items: baseline; gap: 10px;
+      }
+      h2 .num {
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size: .8rem; font-weight: 700; color: var(--terra);
+        border: 1px solid var(--line); border-radius: 999px;
+        padding: 1px 10px; white-space: nowrap; line-height: 1.7;
+      }
+      p { margin: 0 0 12px; }
+      p:last-child { margin-bottom: 0; }
+      ul { margin: 0 0 12px; padding-inline-start: 22px; }
+      li { margin-bottom: 6px; }
+      li:last-child { margin-bottom: 0; }
+      strong { color: var(--clay); }
+
+      .note {
+        background: var(--clay-soft);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-top: 14px;
+        font-size: .96rem;
+      }
+      .note p { margin: 0; }
+
+      .contact-list { list-style: none; padding: 0; margin: 4px 0 0; }
+      .contact-list li { margin-bottom: 10px; }
+      .contact-list a {
+        display: inline-flex; align-items: center; gap: 10px;
+        min-height: 2.25rem; font-weight: 600; text-decoration: none;
+      }
+      .contact-list a:hover { text-decoration: underline; }
+      .contact-list svg { flex: none; }
+
+      footer {
+        text-align: center; color: var(--muted); font-size: .92rem;
+        margin-top: 34px;
+      }
+      footer .back-link {
+        display: inline-flex; align-items: center; gap: 8px;
+        min-height: 2.25rem; font-weight: 600; margin-bottom: 10px;
+      }
+      footer p { margin: 4px 0; }
+
+      [hidden] { display: none !important; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="page-head">
+        <div class="head-rule" aria-hidden="true"><span>ⵣ</span></div>
+        <h1 id="page-title">سياسة الخصوصية</h1>
+        <p class="site-name" id="page-sitename">موقع تاريخ أيت بوكماز — الوادي السعيد</p>
+        <p class="updated" id="page-updated">آخر تحديث: 17 نونبر 2026</p>
+      </header>
+
+      <nav class="lang-switch" aria-label="Language / اللغة">
+        <button type="button" data-lang="ar" aria-pressed="true">العربية</button>
+        <button type="button" data-lang="fr" aria-pressed="false">Français</button>
+        <button type="button" data-lang="en" aria-pressed="false">English</button>
+      </nav>
+
+      <!-- ===================== العربية ===================== -->
+      <article data-panel="ar">
+        <section>
+          <h2><span class="num">1</span> مقدمة</h2>
+          <p>مرحباً بك في موقع <strong>«تاريخ أيت بوكماز»</strong>، وهو موقع ثقافي وتاريخي يعرّف بوادي أيت بوكماز في الأطلس الكبير بالمغرب، توضّح هذه الصفحة كيف نتعامل مع المعلومات المتعلقة بزوار الموقع، وما هي ملفات تعريف الارتباط التي قد تُستخدم، وحقوقك في هذا الشأن. باستخدامك للموقع فأنت توافق على ما ورد في هذه السياسة.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">2</span> المعلومات التي نجمعها</h2>
+          <p>هذا الموقع لا يطلب منك إنشاء حساب، ولا يحتوي على نماذج تسجيل، ولا يجمع أسماء أو كلمات مرور أو أي بيانات شخصية بشكل مباشر. المعلومات الوحيدة التي قد تُجمع هي:</p>
+          <ul>
+            <li><strong>بيانات تقنية مجهولة الهوية</strong> عبر خدمة إحصائيات الزيارات (Google Analytics) كما هو موضح في القسم التالي.</li>
+            <li><strong>المعلومات التي ترسلها بنفسك</strong> إذا تواصلت معنا عبر البريد الإلكتروني أو إنستغرام أو واتساب، مثل اسمك ومحتوى رسالتك، وتُستخدم فقط للرد عليك.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">3</span> إحصائيات الزيارات — Google Analytics</h2>
+          <p>نستخدم خدمة <strong>Google Analytics</strong> من شركة Google لمعرفة عدد زوار الموقع والصفحات الأكثر قراءة، حتى نطوّر المحتوى ونحسّنه. تجمع هذه الخدمة بيانات تقنية مثل: نوع الجهاز والمتصفح، البلد والمدينة بشكل تقريبي، الصفحات التي تمت زيارتها ومدة الزيارة. هذه البيانات إحصائية ومجمّعة، ولا نستخدمها للتعرف على هوية أي زائر بعينه.</p>
+          <p>يمكنك تعطيل تتبّع Google Analytics في جميع المواقع عبر إضافة المتصفح الرسمية من Google: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">tools.google.com/dlpage/gaoptout</a>. ولمزيد من التفاصيل حول كيفية استعمال Google للبيانات: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">سياسة Google لبيانات الشركاء</a>.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">4</span> ملفات تعريف الارتباط (الكوكيز)</h2>
+          <p>ملفات تعريف الارتباط هي ملفات نصية صغيرة يحفظها المتصفح على جهازك. قد يستخدم هذا الموقع الأنواع التالية:</p>
+          <ul>
+            <li><strong>كوكيز الإحصائيات:</strong> تضعها Google Analytics لتمييز الزيارات وحسابها بشكل مجهول.</li>
+            <li><strong>كوكيز الإعلانات:</strong> إذا عُرضت إعلانات على الموقع مستقبلاً (انظر القسم التالي)، فقد تضع Google وشركاؤها كوكيز لعرض إعلانات مناسبة لاهتماماتك.</li>
+          </ul>
+          <p>يمكنك في أي وقت حذف ملفات تعريف الارتباط أو حظرها من إعدادات متصفحك، وسيبقى الموقع قابلاً للتصفح بشكل عادي.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">5</span> الإعلانات — Google AdSense</h2>
+          <p>قد يعرض هذا الموقع في المستقبل إعلانات عبر خدمة <strong>Google AdSense</strong>. عند تفعيلها:</p>
+          <ul>
+            <li>تستخدم Google وشركاؤها من المعلنين ملفات تعريف الارتباط لعرض إعلانات بناءً على زياراتك لهذا الموقع ولمواقع أخرى على الإنترنت.</li>
+            <li>يمكنك إيقاف الإعلانات المخصّصة من إعدادات إعلانات Google: <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</li>
+            <li>للمزيد حول كيفية استخدام Google لملفات تعريف الارتباط في الإعلانات: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.</li>
+          </ul>
+          <div class="note"><p>لا نتحكم في محتوى الإعلانات التي تختارها Google، وظهور إعلان ما على الموقع لا يعني أننا نوصي بالمنتج أو الخدمة المعلن عنها.</p></div>
+        </section>
+
+        <section>
+          <h2><span class="num">6</span> الروابط الخارجية</h2>
+          <p>يحتوي الموقع على روابط تؤدي إلى مواقع وخدمات خارجية، مثل إنستغرام وواتساب ومواقع المصادر والمراجع. عند انتقالك إلى أي موقع خارجي، تسري عليه سياسة الخصوصية الخاصة به، ولسنا مسؤولين عن كيفية تعامله مع بياناتك. ننصحك بقراءة سياسة الخصوصية لأي موقع تزوره.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">7</span> مشاركة المعلومات</h2>
+          <p>نحن <strong>لا نبيع</strong> أي معلومات عن الزوار ولا نؤجّرها ولا نشاركها لأغراض تسويقية. البيانات الإحصائية المذكورة أعلاه تعالجها Google بصفتها مزوّد خدمة الإحصائيات (والإعلانات مستقبلاً)، وفقاً لسياساتها الخاصة.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">8</span> حقوقك</h2>
+          <p>إذا كنت قد تواصلت معنا برسالة وتودّ حذفها أو معرفة ما نحتفظ به عنك، يمكنك مراسلتنا في أي وقت عبر وسائل التواصل في القسم الأخير، وسنرد عليك ونحذف ما طلبت حذفه. أما بيانات الإحصائيات فهي مجهولة الهوية ولا يمكن ربطها بشخص معيّن.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">9</span> خصوصية الأطفال</h2>
+          <p>محتوى هذا الموقع تاريخي وثقافي موجّه لعامة القرّاء، وهو لا يجمع عمداً أي معلومات شخصية من الأطفال. إذا تواصل معنا قاصر، تُعامل رسالته بنفس قواعد الرد والحذف المذكورة أعلاه.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">10</span> تعديلات على هذه السياسة</h2>
+          <p>قد نحدّث هذه الصفحة عند الحاجة، مثلاً عند تفعيل الإعلانات أو إضافة خدمة جديدة. عند أي تغيير مهم، سنحدّث تاريخ «آخر تحديث» في أعلى الصفحة. ننصحك بمراجعة هذه الصفحة من حين لآخر.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">11</span> تواصل معنا</h2>
+          <p>لأي سؤال حول سياسة الخصوصية هذه، يمكنك التواصل معنا عبر:</p>
+          <ul class="contact-list">
+            <li><a href="mailto:allalibadr414@gmail.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span dir="ltr">allalibadr414@gmail.com</span></a></li>
+            <li><a href="https://www.instagram.com/bwidr.a?igsh=MWh3bnR5ajR1N3k2MA==" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg>
+              <span>إنستغرام — <span dir="ltr">@bwidr.a</span></span></a></li>
+            <li><a href="https://wa.me/212697422021" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M9 9.5c.5 2.5 3 5 5.5 5.5l1-1.5 2.5 1c-.5 1.5-1.5 2-3 1.5C10 14 10 14 8.5 10 8 8.5 8.5 7.5 10 7l1 2.5Z" fill="currentColor" stroke="none" opacity=".9"/></svg>
+              <span>واتساب</span></a></li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- ===================== Français ===================== -->
+      <article data-panel="fr" hidden>
+        <section>
+          <h2><span class="num">1</span> Introduction</h2>
+          <p>Bienvenue sur le site <strong>« Histoire d'Aït Bouguemez »</strong>, un site culturel et historique consacré à la vallée d'Aït Bouguemez, dans le Haut Atlas marocain, Cette page explique comment nous traitons les informations relatives aux visiteurs du site, quels cookies peuvent être utilisés et quels sont vos droits. En utilisant ce site, vous acceptez la présente politique.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">2</span> Informations que nous collectons</h2>
+          <p>Ce site ne vous demande pas de créer un compte, ne contient aucun formulaire d'inscription et ne collecte directement ni noms, ni mots de passe, ni autres données personnelles. Les seules informations susceptibles d'être collectées sont :</p>
+          <ul>
+            <li><strong>Des données techniques anonymes</strong> via le service de statistiques de visite (Google Analytics), comme expliqué dans la section suivante.</li>
+            <li><strong>Les informations que vous nous envoyez vous-même</strong> si vous nous contactez par e-mail, Instagram ou WhatsApp, telles que votre nom et le contenu de votre message, utilisées uniquement pour vous répondre.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">3</span> Statistiques de visite — Google Analytics</h2>
+          <p>Nous utilisons <strong>Google Analytics</strong>, un service de Google, pour connaître le nombre de visiteurs du site et les pages les plus lues, afin d'améliorer le contenu. Ce service collecte des données techniques telles que : le type d'appareil et de navigateur, le pays et la ville de manière approximative, les pages visitées et la durée de la visite. Ces données sont statistiques et agrégées ; nous ne les utilisons pas pour identifier un visiteur en particulier.</p>
+          <p>Vous pouvez désactiver le suivi de Google Analytics sur tous les sites grâce au module officiel de Google pour navigateur : <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">tools.google.com/dlpage/gaoptout</a>. Pour en savoir plus sur l'utilisation des données par Google : <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">règles de Google sur les données des sites partenaires</a>.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">4</span> Cookies</h2>
+          <p>Les cookies sont de petits fichiers texte enregistrés par votre navigateur sur votre appareil. Ce site peut utiliser les types suivants :</p>
+          <ul>
+            <li><strong>Cookies de statistiques :</strong> déposés par Google Analytics pour distinguer et compter les visites de manière anonyme.</li>
+            <li><strong>Cookies publicitaires :</strong> si des publicités sont affichées sur le site à l'avenir (voir la section suivante), Google et ses partenaires pourront déposer des cookies pour afficher des annonces adaptées à vos centres d'intérêt.</li>
+          </ul>
+          <p>Vous pouvez à tout moment supprimer ou bloquer les cookies depuis les paramètres de votre navigateur ; le site restera parfaitement consultable.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">5</span> Publicité — Google AdSense</h2>
+          <p>Ce site pourra à l'avenir afficher des publicités via le service <strong>Google AdSense</strong>. Le cas échéant :</p>
+          <ul>
+            <li>Google et ses partenaires publicitaires utilisent des cookies pour diffuser des annonces basées sur vos visites de ce site et d'autres sites sur Internet.</li>
+            <li>Vous pouvez désactiver la publicité personnalisée dans les paramètres des annonces Google : <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</li>
+            <li>Pour en savoir plus sur l'utilisation des cookies par Google dans la publicité : <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.</li>
+          </ul>
+          <div class="note"><p>Nous ne contrôlons pas le contenu des annonces choisies par Google, et l'affichage d'une annonce sur le site ne signifie pas que nous recommandons le produit ou le service annoncé.</p></div>
+        </section>
+
+        <section>
+          <h2><span class="num">6</span> Liens externes</h2>
+          <p>Le site contient des liens vers des sites et services externes, tels qu'Instagram, WhatsApp et les sites des sources et références. Lorsque vous vous rendez sur un site externe, c'est sa propre politique de confidentialité qui s'applique, et nous ne sommes pas responsables de la manière dont il traite vos données. Nous vous conseillons de lire la politique de confidentialité de tout site que vous visitez.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">7</span> Partage des informations</h2>
+          <p>Nous <strong>ne vendons</strong>, ne louons ni ne partageons aucune information sur les visiteurs à des fins marketing. Les données statistiques mentionnées ci-dessus sont traitées par Google en tant que fournisseur du service de statistiques (et, à l'avenir, de publicité), conformément à ses propres politiques.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">8</span> Vos droits</h2>
+          <p>Si vous nous avez envoyé un message et souhaitez le supprimer ou savoir ce que nous conservons à votre sujet, vous pouvez nous écrire à tout moment via les moyens de contact de la dernière section ; nous vous répondrons et supprimerons ce que vous demandez. Les données statistiques, quant à elles, sont anonymes et ne peuvent être rattachées à une personne précise.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">9</span> Vie privée des enfants</h2>
+          <p>Le contenu de ce site est historique et culturel, destiné à tous les lecteurs, et il ne collecte délibérément aucune information personnelle auprès des enfants. Si un mineur nous écrit, son message est traité selon les mêmes règles de réponse et de suppression décrites ci-dessus.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">10</span> Modifications de cette politique</h2>
+          <p>Nous pourrons mettre à jour cette page si nécessaire, par exemple lors de l'activation des publicités ou de l'ajout d'un nouveau service. En cas de changement important, la date de « dernière mise à jour » en haut de la page sera actualisée. Nous vous invitons à consulter cette page de temps à autre.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">11</span> Nous contacter</h2>
+          <p>Pour toute question concernant cette politique de confidentialité, vous pouvez nous contacter via :</p>
+          <ul class="contact-list">
+            <li><a href="mailto:allalibadr414@gmail.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span dir="ltr">allalibadr414@gmail.com</span></a></li>
+            <li><a href="https://www.instagram.com/bwidr.a?igsh=MWh3bnR5ajR1N3k2MA==" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg>
+              <span>Instagram — <span dir="ltr">@bwidr.a</span></span></a></li>
+            <li><a href="https://wa.me/212697422021" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M9 9.5c.5 2.5 3 5 5.5 5.5l1-1.5 2.5 1c-.5 1.5-1.5 2-3 1.5C10 14 10 14 8.5 10 8 8.5 8.5 7.5 10 7l1 2.5Z" fill="currentColor" stroke="none" opacity=".9"/></svg>
+              <span>WhatsApp</span></a></li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- ===================== English ===================== -->
+      <article data-panel="en" hidden>
+        <section>
+          <h2><span class="num">1</span> Introduction</h2>
+          <p>Welcome to <strong>"History of Aït Bouguemez"</strong>, a cultural and historical website about the Aït Bouguemez valley in Morocco's High Atlas, This page explains how we handle information relating to visitors of the site, which cookies may be used, and what your rights are. By using this site, you agree to this policy.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">2</span> Information we collect</h2>
+          <p>This site does not ask you to create an account, contains no sign-up forms, and does not directly collect names, passwords, or other personal data. The only information that may be collected is:</p>
+          <ul>
+            <li><strong>Anonymous technical data</strong> through the visitor statistics service (Google Analytics), as explained in the next section.</li>
+            <li><strong>Information you send us yourself</strong> if you contact us by email, Instagram, or WhatsApp — such as your name and the content of your message — used only to reply to you.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">3</span> Visitor statistics — Google Analytics</h2>
+          <p>We use <strong>Google Analytics</strong>, a Google service, to see how many people visit the site and which pages are read most, so we can improve the content. This service collects technical data such as: device and browser type, approximate country and city, the pages visited, and the length of the visit. This data is statistical and aggregated, and we do not use it to identify any individual visitor.</p>
+          <p>You can disable Google Analytics tracking on all websites using Google's official browser add-on: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">tools.google.com/dlpage/gaoptout</a>. For more on how Google uses data: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google's partner-sites data policy</a>.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">4</span> Cookies</h2>
+          <p>Cookies are small text files that your browser stores on your device. This site may use the following types:</p>
+          <ul>
+            <li><strong>Statistics cookies:</strong> set by Google Analytics to distinguish and count visits anonymously.</li>
+            <li><strong>Advertising cookies:</strong> if ads are shown on the site in the future (see the next section), Google and its partners may set cookies to display ads suited to your interests.</li>
+          </ul>
+          <p>You can delete or block cookies at any time from your browser settings, and the site will continue to work normally.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">5</span> Advertising — Google AdSense</h2>
+          <p>This site may in the future display ads through the <strong>Google AdSense</strong> service. If that happens:</p>
+          <ul>
+            <li>Google and its advertising partners will use cookies to serve ads based on your visits to this site and other sites on the Internet.</li>
+            <li>You can turn off personalised advertising in Google Ads Settings: <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</li>
+            <li>Learn more about how Google uses cookies in advertising: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.</li>
+          </ul>
+          <div class="note"><p>We do not control the content of the ads Google selects, and the appearance of an ad on this site does not mean we recommend the advertised product or service.</p></div>
+        </section>
+
+        <section>
+          <h2><span class="num">6</span> External links</h2>
+          <p>The site contains links to external websites and services, such as Instagram, WhatsApp, and the websites of our sources and references. When you visit an external site, its own privacy policy applies, and we are not responsible for how it handles your data. We recommend reading the privacy policy of any site you visit.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">7</span> Sharing information</h2>
+          <p>We do <strong>not sell</strong>, rent, or share any information about visitors for marketing purposes. The statistical data described above is processed by Google as the provider of the statistics service (and, in the future, advertising), in accordance with its own policies.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">8</span> Your rights</h2>
+          <p>If you have sent us a message and would like it deleted, or want to know what we hold about you, you can write to us at any time using the contact options in the last section, and we will reply and delete what you ask us to delete. The statistics data is anonymous and cannot be linked to a specific person.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">9</span> Children's privacy</h2>
+          <p>The content of this site is historical and cultural, aimed at general readers, and it does not knowingly collect any personal information from children. If a minor writes to us, their message is handled under the same reply-and-delete rules described above.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">10</span> Changes to this policy</h2>
+          <p>We may update this page when needed — for example, when advertising is enabled or a new service is added. Whenever an important change is made, the "Last updated" date at the top of the page will be updated. We recommend checking this page from time to time.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">11</span> Contact us</h2>
+          <p>For any question about this privacy policy, you can contact us via:</p>
+          <ul class="contact-list">
+            <li><a href="mailto:allalibadr414@gmail.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span dir="ltr">allalibadr414@gmail.com</span></a></li>
+            <li><a href="https://www.instagram.com/bwidr.a?igsh=MWh3bnR5ajR1N3k2MA==" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg>
+              <span>Instagram — <span dir="ltr">@bwidr.a</span></span></a></li>
+            <li><a href="https://wa.me/212697422021" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M9 9.5c.5 2.5 3 5 5.5 5.5l1-1.5 2.5 1c-.5 1.5-1.5 2-3 1.5C10 14 10 14 8.5 10 8 8.5 8.5 7.5 10 7l1 2.5Z" fill="currentColor" stroke="none" opacity=".9"/></svg>
+              <span>WhatsApp</span></a></li>
+          </ul>
+        </section>
+      </article>
+
+      <footer>
+        <a class="back-link" href="https://aitbouguemez-history.github.io/" id="back-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M6 10.5V20h12v-9.5"/></svg>
+          <span id="back-text">العودة إلى الموقع الرئيسي</span>
+        </a>
+        <p id="credit">موقع تاريخ أيت بوكماز</p>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        var STRINGS = {
+          ar: {
+            title: "سياسة الخصوصية — تاريخ أيت بوكماز",
+            heading: "سياسة الخصوصية",
+            sitename: "موقع تاريخ أيت بوكماز — الوادي السعيد",
+            updated: "آخر تحديث: 17 نونبر 2026",
+            back: "العودة إلى الموقع الرئيسي",
+            credit: "موقع تاريخ أيت بوكماز",
+            dir: "rtl"
+          },
+          fr: {
+            title: "Politique de confidentialité — Histoire d'Aït Bouguemez",
+            heading: "Politique de confidentialité",
+            sitename: "Site « Histoire d'Aït Bouguemez » — la Vallée Heureuse",
+            updated: "Dernière mise à jour : 17 novembre 2026",
+            back: "Retour au site principal",
+            credit: "Site Histoire d'Aït Bouguemez",
+            dir: "ltr"
+          },
+          en: {
+            title: "Privacy Policy — History of Aït Bouguemez",
+            heading: "Privacy Policy",
+            sitename: "History of Aït Bouguemez — the Happy Valley",
+            updated: "Last updated: 17 November 2026",
+            back: "Back to the main site",
+            credit: "History of Aït Bouguemez",
+            dir: "ltr"
+          }
+        };
+        var buttons = document.querySelectorAll(".lang-switch button");
+        var panels = document.querySelectorAll("[data-panel]");
+        function setLang(lang) {
+          var s = STRINGS[lang];
+          if (!s) return;
+          document.documentElement.lang = lang;
+          document.documentElement.dir = s.dir;
+          document.title = s.title;
+          document.getElementById("page-title").textContent = s.heading;
+          document.getElementById("page-sitename").textContent = s.sitename;
+          document.getElementById("page-updated").textContent = s.updated;
+          document.getElementById("back-text").textContent = s.back;
+          document.getElementById("credit").textContent = s.credit;
+          panels.forEach(function (p) { p.hidden = p.getAttribute("data-panel") !== lang; });
+          buttons.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false"); });
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+        buttons.forEach(function (b) {
+          b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+        });
+      })();
+    </script>
+  </body>
+</html>
